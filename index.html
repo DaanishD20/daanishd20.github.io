@@ -1,78 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daanish D - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.jpeg" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Daanish D</title>
 </head>
 <body>
-    <header>
-        <h1>Daanish D</h1>
-        <p>Contact: <a href="mailto:125003061@sastra.ac.in">125003061@sastra.ac.in</a> | <a href="tel:7094941114">7094941114</a> | Trichy, India</p>
-        <p><a href="https://linkedin.com/in/daanish-d-647765229">LinkedIn</a></p>
-    </header>
-    <section id="profile">
-        <h2>Profile</h2>
-        <p>I am a motivated and skilled student currently pursuing a Bachelor's degree (B.Tech) in Computer Science Engineering. I possess a strong foundation in programming languages such as Python and C++, coupled with experience in working with SQL. Despite limited formal work experience, I am eager to apply my technical skills and knowledge to contribute effectively to innovative projects and continuously expand my expertise in the field.</p>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>B.Tech Computer Science Engineering, SASTRA (2021 – present), Thanjavur, India - CGPA: 7.667</li>
-            <li>Class XII, Sri Vignesh Vidyalaya (2021), Trichy, India - Percentage: 93.2%</li>
-            <li>Class X, Sri Vignesh Vidyalaya (2019), Trichy, India - Percentage: 94.2%</li>
-        </ul>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <h3>Programming Languages</h3>
-        <ul>
-            <li>Python</li>
-            <li>C++</li>
-            <li>Java</li>
-        </ul>
-        <h3>Web Development</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-        <h3>Database</h3>
-        <ul>
-            <li>MongoDB</li>
-            <li>SQL</li>
-        </ul>
-        <h3>Other Skills</h3>
-        <ul>
-            <li>Communication</li>
-            <li>Interpersonal Skills</li>
-            <li>Adaptability</li>
-            <li>Time Management</li>
-            <li>Organising Skills</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Seismic Predicator and Manager</strong> (present) - To predict, monitor, and manage seismic activities such as earthquakes and related geophysical phenomena.</li>
-            <li><strong>Structural Contrastive Learning for Identification of Complex Pelvic Fracture</strong> (2024) - Identifying pelvic bone fractures using Computer Vision.</li>
-        </ul>
-    </section>
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <ul>
-            <li><strong>GUVI - Python</strong> - <a href="https://www.guvi.in/verify-certificate?id=3o6S9g124764JK24T6">Credential ID - 3o6S9g124764JK24T6</a></li>
-        </ul>
-    </section>
-    <section id="awards">
-        <h2>Awards</h2>
-        <ul>
-            <li>Histrionic Talent Award, Sri Vignesh Vidyalaya (2020)</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 Daanish D</p>
-    </footer>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#home" class="nav__logo">Daanish D</a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+               <li class="nav__item"><a href="#work" class="nav__link">Works</a></li>
+               <li class="nav__item"><a href="#info" class="nav__link">Info</a></li>
+               <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+               <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <i class="ri-close-line nav__close" id="nav-close"></i>
+         </div>
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+   
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container">
+            <div class="home__data">
+               <h1 class="home__title">Hello, I'm Daanish D</h1>
+               <h3 class="home__subtitle">Computer Science Graduate</h3>
+               <p class="home__description">Motivated Computer Science graduate with a strong foundation in Python, Java, and SQL. Passionate about leveraging technology and innovation to solve complex problems. Seeking to utilize my technical skills, analytical abilities, and commitment to continuous learning.</p>
+               <a href="#contact" class="button">Contact Me</a>
+            </div>
+            <div class="home__img">
+               <img src="assets/img/profile.jpg" alt="Daanish D">
+            </div>
+         </div>
+         <a href="#work" class="scroll-icon">
+            <i class="ri-arrow-down-s-line"></i>
+         </a>
+      </section>
+
+      <!--==================== WORKS ====================-->
+      <section class="work section" id="work">
+         <h2 class="section__title">Projects</h2>
+         <div class="work__container container">
+            <div class="work__card">
+               <h3 class="work__title">Seismic Predicator and Manager</h3>
+               <p class="work__description">Developed a system to predict, monitor, and manage seismic activities using Python and data analysis techniques.</p>
+            </div>
+            <div class="work__card">
+               <h3 class="work__title">Structural Contrastive Learning for Identification of Complex Pelvic Fracture</h3>
+               <p class="work__description">Utilized Computer Vision and Machine Learning to identify complex pelvic fractures, enhancing accuracy and speed of diagnosis.</p>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== INFO ====================-->
+      <section class="info section" id="info">
+         <h2 class="section__title">Profile & Skills</h2>
+         <div class="info__container container">
+            <div class="info__card">
+               <h3 class="info__title">Profile</h3>
+               <p class="info__description">Motivated Computer Science graduate with a strong foundation in Python, Java, and SQL. Passionate about leveraging technology and innovation to solve complex problems. Seeking to utilize my technical skills, analytical abilities, and commitment to continuous learning.</p>
+            </div>
+            <div class="info__card">
+               <h3 class="info__title">Skills</h3>
+               <ul>
+                  <li><strong>Programming Languages:</strong> Python, C++, Java</li>
+                  <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                  <li><strong>Database Management:</strong> MongoDB, SQL</li>
+                  <li><strong>Software Development:</strong> SDLC</li>
+               </ul>
+            </div>
+            <div class="info__card">
+               <h3 class="info__title">Soft Skills</h3>
+               <ul>
+                  <li>Communication</li>
+                  <li>Interpersonal Skills</li>
+                  <li>Adaptability</li>
+                  <li>Time Management</li>
+                  <li>Organizing Skills</li>
+                  <li>Teamwork</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+         <h2 class="section__title">Services</h2>
+         <div class="services__container container">
+            <div class="services__card">
+               <h3 class="services__title">Web Development</h3>
+               <p class="services__description">Creating responsive and interactive websites using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="services__card">
+               <h3 class="services__title">Software Development</h3>
+               <p class="services__description">Developing software solutions with a focus on efficient SDLC processes.</p>
+            </div>
+            <div class="services__card">
+               <h3 class="services__title">Data Analysis</h3>
+               <p class="services__description">Analyzing data to derive actionable insights and drive decision-making.</p>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <h2 class="section__title">Contact</h2>
+         <div class="contact__container container">
+            <div class="contact__content">
+               <h3 class="contact__title">Get in touch</h3>
+               <p class="contact__description">Feel free to reach out to me for any inquiries or collaborations.</p>
+               <div class="contact__info">
+                  <div class="contact__card">
+                     <i class="ri-mail-line contact__card-icon"></i>
+                     <h3 class="contact__card-title">Email</h3>
+                     <span class="contact__card-data">daanishd12b2svv@gmail.com</span>
+                  </div>
+                  <div class="contact__card">
+                     <i class="ri-phone-line contact__card-icon"></i>
+                     <h3 class="contact__card-title">Phone</h3>
+                     <span class="contact__card-data">7094941114</span>
+                  </div>
+                  <div class="contact__card">
+                     <i class="ri-map-pin-line contact__card-icon"></i>
+                     <h3 class="contact__card-title">Location</h3>
+                     <span class="contact__card-data">Trichy, India</span>
+                  </div>
+               </div>
+            </div>
+            <form action="" class="contact__form" id="contact-form">
+               <div class="contact__form-div">
+                  <label for="name" class="contact__form-tag">Name</label>
+                  <input type="text" name="name" class="contact__form-input" placeholder="Enter your name" required>
+               </div>
+               <div class="contact__form-div">
+                  <label for="email" class="contact__form-tag">Email</label>
+                  <input type="email" name="email" class="contact__form-input" placeholder="Enter your email" required>
+               </div>
+               <div class="contact__form-div">
+                  <label for="message" class="contact__form-tag">Message</label>
+                  <textarea name="message" class="contact__form-input" rows="10" placeholder="Enter your message" required></textarea>
+               </div>
+               <button type="submit" class="button">Send Message</button>
+               <div id="contact-message"></div>
+            </form>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <p>&copy; 2024 Daanish D. All rights reserved.</p>
+      <div class="footer__socials">
+         <a href="https://linkedin.com/in/daanish-d-647765229" class="footer__social" target="_blank"><i class="ri-linkedin-line"></i></a>
+         <a href="mailto:daanishd12b2svv@gmail.com" class="footer__social" target="_blank"><i class="ri-mail-line"></i></a>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+   <!--=============== EMAIL JS ===============-->
+   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+   <script>
+      (function() {
+         emailjs.init('YOUR_PUBLIC_KEY'); // Replace 'YOUR_PUBLIC_KEY' with your actual public key from EmailJS
+      })();
+   </script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
 </body>
 </html>
